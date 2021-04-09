@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title> Create/UpdateE </title>
+</head>
+<body>
+<h1 th:text="${employee.firstName} + ', What Menu Item to Update or Create'"/>
+	<form action="#" th:action="@{/cMenu}" th:object= "${menuItem}" method="post">
+		<label> Item Name : </label>
+		<input type = "text" th:field="*{name}"/>
+		<button type = "submit" class="btn btn-default"> Submit </button>
+	</form>
+</body>
+</html>

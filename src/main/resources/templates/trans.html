@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+	<title> Transaction </title>
+</head>
+<body>
+		<h1> Transaction</h1>
+	<p th:text= "'Hello  ' + ${session.employee.firstName} + ${message}"></p>
+	<p th:text= "'table : ' + ${transaction.table}"></p>
+	<p th:text= "'Transaction ID = ' + ${transaction.id}"></p>
+	<p th:text="'Ordered'"></p>
+		<p th:text = "${order}"></p>
+	<p th:text= "'NetTotal = ' + ${transaction.netTotal}"></p>
+	<p th:text= "'GrossTotal = ' + ${transaction.grossTotal}"></p>
+	<div>
+		<form action="#" th:action="@{/trans}" th:object="${transaction}" method="post">
+			<ul>
+				<li th:each="MenuItem : ${session.menuAL}">
+					<input type="checkbox" th:field="*{ordered}" th:value="${MenuItem.name}" />
+						<label th:for="${#ids.prev('ordered')}" th:text="${MenuItem.name}"></label>
+	  			</li>
+			</ul>
+			<input type="hidden" th:field = "*{id}" th:value = "${transaction.id}"/>
+			<input type="hidden" th:field = "*{table}" th:value = "${transaction.table}"/>
+			<input type="hidden" th:field = "*{eID}" th:value = "${session.employee.id}"/>
+			<button type = "submit" class="btn btn-default">  Order  </button>
+			<input type="submit" name="close" value="close"/>
+
+		</form>
+		<form action="#" th:action="@{/exit}" method = "post">
+			<button type = "submit"> Exit to Table Screen </button>
+		</form>
+	</div>
+</body>
+</html>

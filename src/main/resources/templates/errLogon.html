@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1 align = center>POSlogon</h1>
+<p align = center>Sorry, incorrect password.  Please try again</p>
+<div align= center>
+	<form action ="#" th:action= "@{/logOn}" th:object= "${employee}" method="post">
+		<input type = "text" th:field="*{password}"/><br><br><br>
+		<button type = "submit" class="btn btn-default"> Submit </button>
+	</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

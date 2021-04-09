@@ -1,0 +1,18 @@
+{
+  "menuItems" : [
+    {"name" : "Mussels", "type" : "food", "subType" : "app", "price" : 11.5, "ingredients" : ["PEI Mussels", "Butter", "White Wine", "Thyme", "Garlic"], "allergies" : ["ShellFish", "Dairy", "Allium"], "current": true},
+    {"name" : "Bread Service", "type" : "food", "subType" : "app", "price" : 3.5, "ingredients" : ["Country Bread", "European Cultured Butter"], "allergies" : ["Gluten", "Dairy"], "current": true},
+    {"name" : "Green Salad", "type" : "food", "subType" : "soup/salad", "price" : 4, "ingredients" : ["Baby Greens", "Pine nuts", "Balsamic Vinegar"], "allergies" : ["Treenuts"], "current": true},
+    {"name" : "Chicken Noodle Soup", "type" : "food", "subType" : "soup/salad", "price" : 4, "ingredients" : ["Chicken", "Egg Noodles", "Carrots", "Celery", "Onions"], "allergies" : ["Gluten", "Allium"], "current": true},
+    {"name" : "Spaghetti", "type" : "food", "subType" : "entree", "price" : 13, "ingredients" : ["Housemade Tomato Sauce", "Angle Hair Pasta", "Parmesean"], "allergies" : ["Gluten", "Dairy", "Allium"], "current": true},
+    {"name" : "NY Strip", "type" : "food", "subType" : "entree", "price" : 25, "ingredients" : ["16oz NY Strip", "Mashed Potatoes", "Hericot Vert"], "allergies" : ["Dairy"], "current": true},
+    {"name" : "Hericot Vert", "type" : "food", "subType" : "side", "price" : 5, "ingredients" : ["Green Beans", "EVOO"], "allergies" : ["Vegan"], "current": true},
+    {"name" : "Mashed Potatoes", "type" : "food", "subType" : "side", "price" : 5, "ingredients" : ["Potatoes", "Butter", "Milk"], "allergies" : ["Dairy"], "current": true},
+    {"name" : "Fruit", "type" : "food", "subType" : "dessert", "price" : 6, "ingredients" : ["Watermelon", "Orange", "Honeydew", "Cantelope"], "allergies" : ["Melon", "Citrus"], "current": true},
+    {"name" : "Ice Cream", "type" : "food", "subType" : "dessert", "price" : 6, "ingredients" : ["Milk", "Cream", "Eggs"], "allergies" : ["Dairy"], "current": true},
+    {"name" : "Italian Soda", "type" : "beverage", "subType" : "nonAlcoholic", "price" : 3.5, "ingredients" : ["Flavoring Syrup", "Soda Water"], "allergies" : ["Sugar"], "current": true},
+    {"name" : "Coffee", "type" : "beverage", "subType" : "nonAloholic", "price" : 3.5, "ingredients" : ["Arabica Coffee Beans"], "allergies" : ["Caffeine"], "current": true},
+    {"name" : "Stone IPA", "type" : "beverage", "subType" : "alcoholic", "price" : 7, "ingredients" : ["beer"], "allergies" : ["gluten"], "current": true},
+    {"name" : "Cabernet", "type" : "beverage", "subType" : "Alcoholic", "price" : 12, "ingredients" : ["Wine"], "allergies" : ["Sulfites"], "current": true}
+  ]
+}

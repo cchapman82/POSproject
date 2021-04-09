@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <h1>Admin Error</h1>
+        <p th:text= "'Sorry ' + ${session.employee.firstName} + ', you do not have access to these pages'"/>
+    <form action="#" th:action= "@{/errAdmin}"  method= "post">
+        <button type = "submit" class="btn btn-default"> Return </button>
+    </form>
+</body>
+</html>

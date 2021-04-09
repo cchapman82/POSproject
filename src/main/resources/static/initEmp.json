@@ -1,0 +1,7 @@
+{
+  "employees" : [
+    {"firstName" : "Admin","lastName" : "Admin", "pay" : "0.0", "payType" : "Salary", "secLevel" : "1", "current" : true, "password" : "admin"},
+    {"firstName" : "First","lastName" : "Employee", "pay" : "5.25", "payType" : "Tipped", "secLevel" : "2", "current" : true, "password" : "password"}
+
+  ]
+}

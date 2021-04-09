@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title> Create/UpdateE </title>
+</head>
+<body>
+<h1 th:text = "${session.employee.firstName} + ', What Employee info nedds to change?'"/>
+<div class = "container">
+	<form action="#" th:action="@{/empInfo}" th:object= "${employee}" method="post">
+		<label> First Name :</label>
+		<input type = "text" th:field="*{firstName}"/> <br>
+		<label> Last Name : </label>
+		<input type = "text" th:field="*{lastName}"/>  <br>
+		<label> Pay : </label>
+		<input type = "text" th:field="*{pay}"/>  <br>
+		<label> Pay Type : </label>
+		<input type = "text" th:field="*{payType}"/>  <br>
+		<label> Security Level : </label>
+		<input type = "text" th:field="*{secLevel}"/>  <br>
+		<label> Current : </label>
+		<input type = "text" th:field="*{current}"/> <br>
+		<label> Password : </label>
+		<input type = "text" th:field="*{password}"/>  <br>
+		<button type = "submit" class="btn btn-default"> Submit </button>
+	</form>
+	</div>
+</body>
+</html>

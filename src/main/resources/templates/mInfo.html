@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title> Create/UpdateM </title>
+</head>
+<body>
+<h1>What MenuItem to Update or Create</h1>
+<div class = "container">
+	<form action="#" th:action="@{/mInfo}" th:object= "${menuItem}" method="post">
+		<label> Name :</label>
+		<input type = "text" th:field="*{name}"/> 
+		<label> Type : </label>
+		<input type = "text" th:field="*{type}"/> 
+		<label> Sub-Type : </label>
+		<input type = "text" th:field="*{subType}"/> 
+		<label> Price : </label>
+		<input type = "text" th:field="*{price}"/><br>
+		<label> Ingredients </label>
+		<input th:field="*{ingredients[1]}"/>
+		<input th:field="*{ingredients[2]}"/>
+		<input th:field="*{ingredients[3]}"/>
+		<input th:field="*{ingredients[4]}"/>
+		<input th:field="*{ingredients[5]}"/>
+		<input th:field="*{ingredients[6]}"/>
+		<input th:field="*{ingredients[7]}"/>
+		<input th:field="*{ingredients[8]}"/>
+		<input th:field="*{ingredients[9]}"/>
+		<input th:field="*{ingredients[10]}"/><br>
+		<label> Allergies </label>
+		<input th:field="*{allergies[1]}"/>
+		<input th:field="*{allergies[2]}"/>
+		<input th:field="*{allergies[3]}"/>
+		<input th:field="*{allergies[4]}"/>
+		<input th:field="*{allergies[5]}"/>
+		<input th:field="*{allergies[6]}"/><br>
+		
+		<button type = "submit" class="btn btn-default"> Submit </button>
+	</form>
+	</div>
+</body>
+</html>

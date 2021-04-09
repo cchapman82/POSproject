@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="tableScreen.css">
+<head>
+	<title> Administration </title>
+</head>
+<body>
+
+<h1> Welcome to Administration </h1>
+<p th:text= "'Hello ' + ${session.employee.firstName} + ', Please choose an action'" />
+
+<form action="#" th:action= "@{/admin}" method="post">
+	<input type="submit" name="CreateEmployee" value="Create or Update Employee"/> <br>
+	<input type="submit" name="CreateMenuItem" value="Create or Update MenuItem"/>
+</form>
+</body>
+</html>

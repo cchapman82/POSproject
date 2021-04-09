@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+	<link rel="stylesheet" href="tableScreen.css">
+</head>
+
+<body>
+
+<h1>Welcome</h1>
+
+<p th:text="'Welcome ' + ${session.employee.firstName} + ${message}"/>
+<form action="#" th:action= "@{/tableScreen}" th:object= "${transaction}" method="post">
+	<input type="submit" name="table" value="101"/>
+	<input type="submit" name="table" value="201"/><br>
+	<input type="submit" name="table" value="102"/>
+	<input type="submit" name="table" value="202"/><br>
+	<input type="submit" name="table" value="103"/>
+	<input type="submit" name="table" value="203"/><br>
+	<input type="submit" name="table" value="104"/>
+	<input type="submit" name="table" value="204"/>
+</form>
+<form action="#" th:action= "@{/tableScreen}" method="post">
+	<input type="submit" name="admin" value="admin"/>
+</form>
+<form action="#" th:action= "@{/tableScreen}" method="post">
+	<input type="submit" name="logout" value="logout"/>
+</form>
+</body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Payment</title>
+</head>
+
+<body>
+
+	<h1>Payment</h1>
+
+    <p th:text= "'Total is ' + ${transaction.grossTotal}"/>
+
+
+   <form action="#" th:action= "@{/ctran}" th:object= "${transaction}" method="post">
+        <input type="hidden" th:field = "*{id}" th:value = "${transaction.id}"/>
+        <input type="hidden" th:field = "*{table}" th:value = "${transaction.table}"/>
+        <input type="hidden" th:field = "*{eID}" th:value = "${session.employee.id}"/>
+	   <input type="hidden" th:field = "*{grossTotal}" th:value = "${transaction.grossTotal}"/>
+	   <input type="submit" name="action" value="Cash"/>
+	   <input type="submit" name="action" value="Credit Card"/>
+	   <input type="submit" name="action" value="Gift Card"/>
+
+</form>
+
+</body>
+</html>
